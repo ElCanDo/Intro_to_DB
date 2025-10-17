@@ -29,10 +29,10 @@ CREATE TABLE Orders (
     order_date DATE
 );
 
-CREATE TABLE Oder_Details (
+CREATE TABLE Order_Details (
     orderdetailid INT PRIMARY KEY, 
     oder_id INT,  
-    FOREIGN KEY (oder_id) REFERENCES Orders(order_id), 
+    FOREIGN KEY (order_id) REFERENCES Orders(order_id), 
     book_id INT, 
     FOREIGN KEY (book_id) REFERENCES Books(book_id), 
     quantity DOUBLE
