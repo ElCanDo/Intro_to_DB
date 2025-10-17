@@ -17,4 +17,6 @@ try:
         print("Database 'alx_book_store' created successfully!")
 except mysql.connector.Error as err:
     print("Error: can't connect to Database")
-    
+
+mycursor.close()
+mydb.close()
