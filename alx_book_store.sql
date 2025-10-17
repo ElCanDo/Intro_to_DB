@@ -23,10 +23,10 @@ CREATE TABLE Customers (
 );
 
 CREATE TABLE Oders (
-    order_id PRIMARY KEY, 
+    order_id INT PRIMARY KEY, 
     customer_id INT,
      FOREIGN KEY (customer_id) REFERENCES Customers (customer_id), 
-    oder_date DATE
+    order_date DATE
 );
 
 CREATE TABLE Oder_Details (
